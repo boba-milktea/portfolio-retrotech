@@ -1,26 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
 @import "tailwindcss";
 
+
+@theme {
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-display: 'VT323', monospace;
+  --primary:     #39FF14;
+  --primary-mid: #22c407;
+  --primary-dim: #1a7a0a;
+  --primary-faint: rgba(57, 255, 20, 0.07);
+  --primary-border: rgba(57, 255, 20, 0.2);
+  --bg:  #080e08;
+  --bg2: #0c140c;
+  --amber: #FFB800;
+}
+
+/*
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary:     #39FF14;
+  --primary-mid: #22c407;
+  --primary-dim: #1a7a0a;
+  --primary-faint: rgba(57, 255, 20, 0.07);
+  --primary-border: rgba(57, 255, 20, 0.2);
+  --bg:  #080e08;
+  --bg2: #0c140c;
+  --amber: #FFB800;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-display: 'VT323', monospace;
+}*/
+
+.amber-mode {
+  --primary:     #FFB800;
+  --primary-mid: #cc9000;
+  --primary-dim: #7a5500;
+  --primary-faint: rgba(255, 184, 0, 0.07);
+  --primary-border: rgba(255, 184, 0, 0.2);
+  --bg:  #0e0b04;
+  --bg2: #120d05;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--primary);
+  font-family: var(--font-mono);
+  transition: background-color 0.4s, color 0.4s;
 }
