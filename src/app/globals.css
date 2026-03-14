@@ -13,6 +13,13 @@
   --bg:  #080e08;
   --bg2: #0c140c;
   --amber: #FFB800;
+
+  --animate-blink: blink 1.1s step-end infinite; 
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
 }
 
 /*
