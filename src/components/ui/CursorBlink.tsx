@@ -1,6 +1,5 @@
-
 export function CursorBlink() {
   return (
-    <span className="inline-block w-[10px] h-[18px] ml-1 align-middle animate-blink background-primary" />
-  )
+    <span className="animate-blink background-primary ml-1 inline-block h-[18px] w-[10px] align-middle" />
+  );
 }

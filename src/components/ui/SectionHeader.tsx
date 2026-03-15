@@ -1,14 +1,14 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 interface SectionHeaderProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 export function SectionHeader({ children }: SectionHeaderProps) {
   return (
-    <div className="flex items-center gap-3 px-6 pt-3 pb-0 text-[9px] tracking-[0.2em] font-mono text-primary-dim">
-        {children}
-        <span className="flex-1 border-b border-primary-border" />
+    <div className="text-primary-dim flex items-center gap-3 px-6 pt-3 pb-0 font-mono text-[9px] tracking-[0.2em]">
+      {children}
+      <span className="border-primary-border flex-1 border-b" />
     </div>
-  )
-}   
+  );
+}
