@@ -1,11 +1,11 @@
 interface SkillPillProps {
-    label: string;
+  label: string;
 }
 
 export function SkillPill({ label }: SkillPillProps) {
-    return (
-        <span className="text-[10px] tracking-[0.06em] px-2 py-[3px] color-primary-mid border border-primary-border font-mono">
-            {label}
-        </span>
-    );
+  return (
+    <span className="color-primary-mid border-primary-border border px-2 py-[3px] font-mono text-[10px] tracking-[0.06em]">
+      {label}
+    </span>
+  );
 }

@@ -1,20 +1,31 @@
-import { SectionHeader } from "@/components/ui/SectionHeader";
-import { ProjectCard } from "@/components/ui/ProjectCard";
-import { projects } from "@/data/projects";
+import { SectionHeader } from '@/components/ui/SectionHeader';
+import { ProjectCard } from '@/components/ui/ProjectCard';
+import { projects } from '@/data/projects';
+import { FadeIn } from '../ui/FadeIn';
 
 export function Projects() {
-    return (
-        <section id="work" className="pb-6 border-b border-primary-border">
-            <SectionHeader> SELECTED PROJECTS</SectionHeader>
-            <div className="grid grid-cols-1 sù:grid-cols-2 gap-3 px-6 pt-4">
-                {projects.map((project, index) => (
-                    <ProjectCard key={project.id} project={project} index={index} />
-                ))}
-                <a href="https://github.com/boab-milktea?tab=repositories" target="_blank" rel="noopener noreferrer" 
-                className="flex items-center justify-center p-4 rounded-sm text-[10px] tracking-[0.1px] transition-opacity hover:opacity-70 border border-primary-border color-primary-dim font-mono">
-                    &gt; _MORE ON GITHUB_ &lt;
-                </a>
-            </div>
-        </section>
-    );
+  return (
+    <section id="work" className="border-primary-border border-b pb-6">
+      <FadeIn>
+        <SectionHeader> SELECTED PROJECTS</SectionHeader>
+      </FadeIn>
+      <div className="sù:grid-cols-2 grid grid-cols-1 gap-3 px-6 pt-4">
+        {projects.map((project, index) => (
+          <FadeIn key={project.id} delay={index * 0.1}>
+            <ProjectCard project={project} index={index} />
+          </FadeIn>
+        ))}
+        <FadeIn delay={projects.length * 0.1}>
+          <a
+            href="https://github.com/boab-milktea?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-primary-border color-primary-dim flex items-center justify-center rounded-sm border p-4 font-mono text-[10px] tracking-[0.1px] transition-opacity hover:opacity-70"
+          >
+            &gt; _MORE ON GITHUB_ &lt;
+          </a>
+        </FadeIn>
+      </div>
+    </section>
+  );
 }

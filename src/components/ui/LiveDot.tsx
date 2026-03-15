@@ -1,7 +1,3 @@
-
-
 export function LiveDot() {
-  return (
-    <span className="inline-block w-[6px] h-[6px] rounded-full animate-blink background-primary" />
-  )
+  return <span className="animate-blink bg-primary inline-block h-[6px] w-[6px] rounded-full" />;
 }
