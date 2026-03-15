@@ -16,3 +16,14 @@ export interface Project {
     repo?: string;
     featured: boolean; 
 }
+
+export interface SkillGroup {
+    label: string; 
+    skills: string[]; 
+}
+
+export interface ContactLink {
+    prefix: string; 
+    label: string; 
+    href: string; 
+}
