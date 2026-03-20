@@ -14,9 +14,7 @@ export function Skills() {
         {skillGroups.map((group, index) => (
           <FadeIn key={group.label} delay={index * 0.1}>
             <div>
-              <p className="color-primary-dim mb-3 font-mono text-[9px] tracking-[0.18em]">
-                {group.label}
-              </p>
+              <p className="text-primary mb-3 font-mono text-xs tracking-[0.18em]">{group.label}</p>
               <div className="flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <SkillPill key={skill} label={skill} />

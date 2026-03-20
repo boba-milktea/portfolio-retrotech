@@ -17,7 +17,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <Scanlines />
           <Navbar />
-          <main className="min-h-screen">{children}</main>
+          <main className="border-primary-border mx-auto my-6 min-h-screen max-w-7xl border">
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>
