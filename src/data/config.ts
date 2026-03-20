@@ -5,12 +5,12 @@ export const config = {
   role: '// FULL-STACK DEVELOPER',
   tagline: [
     'Designing and building digital experiences',
-    'Building fast, responsive, and scalable web products with React, Next.js, and Java',
+    'Building fast, responsive, and scalable web products with React, Next.js, and Node.js',
     'Creating intuitive and engaging user interfaces',
     'Available for hire',
   ],
   status: 'OPEN TO WORK',
-  resumeURL: '/Catherine_Lin_Resume.pdf',
+  resumeURL: '/Catherine-FullStack.pdf',
   available: true,
 
   about: [
@@ -35,7 +35,7 @@ export const config = {
     {
       prefix: 'github://',
       label: 'github.com/boab-milktea',
-      href: 'https://github.com/boab-milktea',
+      href: 'https://github.com/boba-milktea',
     },
   ] satisfies ContactLink[],
 };

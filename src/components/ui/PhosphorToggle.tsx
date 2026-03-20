@@ -9,14 +9,9 @@ export function PhosphorToggle() {
     <button
       onClick={toggleMode}
       aria-label={`Switch to ${isAmberMode ? 'green' : 'amber'} phosphor mode`}
-      className="flex cursor-pointer items-center gap-2 rounded-sm px-[10px] py-1 transition-all duration-300"
-      style={{
-        background: 'var(--primary-faint)',
-        border: '1px solid var(--primary-border)',
-        fontFamily: 'var(--font-mono)',
-      }}
+      className="bg-primary-faint border-primary-border flex cursor-pointer items-center gap-2 rounded-sm border px-[10px] py-1 font-mono transition-all duration-300"
     >
-      <span className="text-[9px] tracking-[0.12em]" style={{ color: 'var(--primary-dim)' }}>
+      <span className="text-primary-dim text-xs tracking-[0.12em]">
         PHOSPHOR: {mode.toUpperCase()}
       </span>
 
@@ -28,9 +23,8 @@ export function PhosphorToggle() {
         }}
       >
         <span
-          className="absolute top-[2px] left-[2px] h-[10px] w-[10px] rounded-full transition-transform duration-300"
+          className="bg-primary absolute top-[2px] left-[2px] h-[10px] w-[10px] rounded-full transition-transform duration-300"
           style={{
-            background: 'var(--primary)',
             transform: isAmberMode ? 'translateX(14px)' : 'translateX(0)',
           }}
         />

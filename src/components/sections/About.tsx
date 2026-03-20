@@ -5,13 +5,13 @@ import { CursorBlink } from '@/components/ui/CursorBlink';
 export function About() {
   return (
     <section id="about" className="border-primary-border border-b pb-6">
-      <SectionHeader> ABOUT </SectionHeader>
+      <SectionHeader> README.MD </SectionHeader>
 
-      <div className="color-primary-dim flex flex-col gap-1 px-6 pt-4 font-mono text-[11px] leading-relaxed">
+      <div className="text-primary-dim flex flex-col gap-1 px-6 pt-4 font-mono text-sm leading-relaxed">
         {config.about.map((item, index) => (
           <span key={index}>
-            &gt; {item} &lt;
-            {index !== config.about.length - 1 && <CursorBlink />}
+            &gt; {item}
+            {index === config.about.length - 1 && <CursorBlink />}
           </span>
         ))}
       </div>

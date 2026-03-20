@@ -19,8 +19,8 @@ export function Contact() {
               aria-label={`Open ${item.label} in a new tab`}
               className="flex w-fit items-center gap-2 font-mono tracking-[0.06em] transition-opacity hover:opacity-70"
             >
-              <span className="color-primary-dim">{item.prefix}</span>
-              <span className="color-primary-mid">{item.label}</span>
+              <span className="text-primary-dim">{item.prefix}</span>
+              <span className="text-primary-mid">{item.label}</span>
             </a>
           </FadeIn>
         ))}

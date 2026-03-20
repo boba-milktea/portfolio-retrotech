@@ -8,7 +8,7 @@ export const projects: Project[] = [
       "GEO Scorer analyzes readability, structure, factual depth, and authority signals from the user's content to determine its quality and relevance.",
     tags: ['react', 'typescript', 'Vite', 'tailwindCSS'],
     featured: true,
-    live: 'https://geo-scorer.vercel.app/',
+    live: 'https://geo-scorer.netlify.app/',
     repo: 'https://github.com/boab-milktea/geo-scorer',
   },
   {
@@ -17,7 +17,7 @@ export const projects: Project[] = [
     description: 'A dashboard for managing invoices and tracking payments.',
     tags: ['react', 'typescript', 'tailwindCSS', 'node.js', 'express', 'prisma', 'sqlite3'],
     featured: true,
-    live: 'https://invoice-dashboard.vercel.app/',
+    live: 'https://invoice-dashboard-1.onrender.com/',
     repo: 'https://github.com/boab-milktea/invoice-dashboard',
   },
 ];
