@@ -17,7 +17,7 @@ export function Projects() {
         ))}
         <FadeIn delay={projects.length * 0.1}>
           <a
-            href="https://github.com/boab-milktea?tab=repositories"
+            href="https://github.com/boba-milktea?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="border-primary-border text-primary-dim flex items-center justify-center rounded-sm border p-4 font-mono text-xs tracking-[0.1px] transition-opacity hover:opacity-70"

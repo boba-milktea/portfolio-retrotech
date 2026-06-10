@@ -34,7 +34,7 @@ export const config = {
     },
     {
       prefix: 'github://',
-      label: 'github.com/boab-milktea',
+      label: 'github.com/boba-milktea',
       href: 'https://github.com/boba-milktea',
     },
   ] satisfies ContactLink[],
