@@ -9,7 +9,7 @@ export const projects: Project[] = [
     tags: ['react', 'typescript', 'Vite', 'tailwindCSS'],
     featured: true,
     live: 'https://geo-scorer.netlify.app/',
-    repo: 'https://github.com/boab-milktea/geo-scorer',
+    repo: 'https://github.com/boba-milktea/geo-scorer',
   },
   {
     id: 'project-02',
@@ -18,6 +18,16 @@ export const projects: Project[] = [
     tags: ['react', 'typescript', 'tailwindCSS', 'node.js', 'express', 'prisma', 'sqlite3'],
     featured: true,
     live: 'https://invoice-dashboard-1.onrender.com/',
-    repo: 'https://github.com/boab-milktea/invoice-dashboard',
+    repo: 'https://github.com/boba-milktea/invoice-dashboard',
+  },
+  {
+    id: 'project-03',
+    title: 'Portfolio — Retro Terminal',
+    description:
+      'Personal portfolio with a phosphor terminal aesthetic and green/amber display toggle.',
+    tags: ['next.js', 'react', 'typescript', 'tailwindCSS', 'framer-motion'],
+    featured: true,
+    live: 'https://catherine-fullstack.netlify.app/',
+    repo: 'https://github.com/boba-milktea/portfolio-retrotech',
   },
 ];
